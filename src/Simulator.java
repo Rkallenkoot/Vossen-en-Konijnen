@@ -14,8 +14,6 @@ import java.awt.Color;
  * @version 2011.07.31
  */
 public class Simulator
-
-//rick is te gek 
 {
     // Constants representing configuration information for the simulation.
     // The default width for the grid.
