@@ -5,7 +5,7 @@ import java.util.Random;
  * A simple model of a rabbit.
  * Rabbits age, move, breed, and die.
  * 
- * @author David J. Barnes and Michael Kölling
+ * @author Roelof Kallenkoot, Iris Meijer, Patrick Swijgman and Rutger Roffel
  * @version 2011.07.31
  */
 public class Rabbit extends Animal
