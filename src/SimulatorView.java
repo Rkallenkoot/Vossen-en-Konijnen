@@ -104,6 +104,13 @@ public class SimulatorView extends JFrame
     	});
     	fileMenu.add(quitItem);
     	
+    	// Over menu
+    	JMenu aboutMenu = new JMenu("About");
+    	menubar.add(aboutMenu);
+    	
+    	JMenuItem aboutItem = new JMenuItem("About");
+    	aboutMenu.add(aboutItem);
+    	
     }
     
     /**
