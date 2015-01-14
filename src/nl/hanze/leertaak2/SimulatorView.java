@@ -1,3 +1,5 @@
+package nl.hanze.leertaak2;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -71,7 +73,16 @@ public class SimulatorView extends JFrame
     	btnSimulateMultiple.addActionListener(new ActionListener(){
     		public void actionPerformed(ActionEvent e){
     			// Simulate 100 steps
-    			Simulator.sim.simulate(100);
+    			new Thread(new Runnable(){
+					@Override
+					public void run() {
+						// TODO Auto-generated method stub
+						// disable the button so it cannot be pressed again.
+						btnSimulateMultiple.setEnabled(false);
+						Simulator.sim.simulate(100);
+						btnSimulateMultiple.setEnabled(true);
+					}
+    			}).start();
     		}
     	});
     	sidepanel.add(btnSimulateMultiple);
