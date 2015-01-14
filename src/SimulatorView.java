@@ -11,11 +11,13 @@ import java.util.Map;
  * Colors for each type of species can be defined using the
  * setColor method.
  * 
- * @author David J. Barnes and Michael Kölling
+ * @author David J. Barnes and Michael Kolling
  * @version 2011.07.31
  */
 public class SimulatorView extends JFrame
 {
+	// De container
+	private Container content;
     // Colors used for empty locations.
     private static final Color EMPTY_COLOR = Color.white;
 
@@ -53,7 +55,7 @@ public class SimulatorView extends JFrame
     private void makeSidepanel(){
     	// JLabel en Textfield, gebruiker kan zelf aantal invullen
     	// Make ff in GridLayout op BorderLayout.WEST
-    	Container content = getContentPane();
+    	content = getContentPane();
     	JPanel sidepanel = new JPanel();
     	sidepanel.setLayout(new GridLayout(4,1));
     	
@@ -109,8 +111,19 @@ public class SimulatorView extends JFrame
     	menubar.add(aboutMenu);
     	
     	JMenuItem aboutItem = new JMenuItem("About");
+    	aboutItem.addActionListener(new ActionListener(){
+    		public void actionPerformed(ActionEvent e){
+    			showAbout();
+    		}
+    	});
     	aboutMenu.add(aboutItem);
-    	
+    }
+ 
+    /**
+     * Laat een about venster zien
+     */
+    private void showAbout(){
+    	JOptionPane.showInternalMessageDialog(content, "Versie 1.0 Beta Deluxe", "Over", JOptionPane.INFORMATION_MESSAGE);
     }
     
     /**
