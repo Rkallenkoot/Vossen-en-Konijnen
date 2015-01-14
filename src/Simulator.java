@@ -34,9 +34,10 @@ public class Simulator
     // A graphical view of the simulation.
     private SimulatorView view;
     
+    public static Simulator sim;
+    
     public static void main(String[] args){
-    	Simulator sim = new Simulator();
-    	sim.simulate(200);
+    	sim = new Simulator();
     }
     
     /**

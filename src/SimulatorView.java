@@ -25,6 +25,10 @@ public class SimulatorView extends JFrame
     private final String STEP_PREFIX = "Step: ";
     private final String POPULATION_PREFIX = "Population: ";
     private JLabel stepLabel, population;
+    
+    // Buttons die worden gebruikt in de sidepanel
+    private JButton btnSimulateOne, btnSimulateMultiple;
+    
     private FieldView fieldView;
     
     // A map for storing colors for participants in the simulation
@@ -41,21 +45,88 @@ public class SimulatorView extends JFrame
     {
         stats = new FieldStats();
         colors = new LinkedHashMap<Class, Color>();
-
-        setTitle("Fox and Rabbit Simulation");
-        stepLabel = new JLabel(STEP_PREFIX, JLabel.CENTER);
-        population = new JLabel(POPULATION_PREFIX, JLabel.CENTER);
-        
-        setLocation(100, 50);
-        
         fieldView = new FieldView(height, width);
-
+        
+        makeFrame();
+    }
+    
+    private void makeSidepanel(){
+    	// JLabel en Textfield, gebruiker kan zelf aantal invullen
+    	// Make ff in GridLayout op BorderLayout.WEST
+    	Container content = getContentPane();
+    	JPanel sidepanel = new JPanel();
+    	sidepanel.setLayout(new GridLayout(4,1));
+    	
+    	
+    	btnSimulateOne = new JButton("Simulate 1 step");
+    	btnSimulateOne.addActionListener(new ActionListener(){
+    		public void actionPerformed(ActionEvent e){
+    			// Simulate 1 step
+    			Simulator.sim.simulate(1);
+    		}
+    	});
+    	sidepanel.add(btnSimulateOne);
+    	
+    	btnSimulateMultiple = new JButton("Simulate 100 steps");
+    	btnSimulateMultiple.addActionListener(new ActionListener(){
+    		public void actionPerformed(ActionEvent e){
+    			// Simulate 100 steps
+    			Simulator.sim.simulate(100);
+    		}
+    	});
+    	sidepanel.add(btnSimulateMultiple);
+    	
+    	content.add(sidepanel, BorderLayout.WEST);
+    	
+    }
+    
+    /**
+     * Deze methode maakt de MenuBar inclusief MenuItems
+     */
+    private void makeMenuBar(){
+    	final int SHORTCUT_MASK = Toolkit.getDefaultToolkit().getMenuShortcutKeyMask();
+    	
+    	// Menu bar
+    	JMenuBar menubar = new JMenuBar();
+    	setJMenuBar(menubar);
+    	
+    	// File menu
+    	JMenu fileMenu = new JMenu("File");
+    	fileMenu.setMnemonic('F');
+    	menubar.add(fileMenu);
+    	
+    	JMenuItem quitItem = new JMenuItem("Quit");
+    	quitItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_Q, SHORTCUT_MASK));
+    	quitItem.addActionListener(new ActionListener(){
+    		public void actionPerformed(ActionEvent e){
+    			System.exit(0);
+    		}
+    	});
+    	fileMenu.add(quitItem);
+    	
+    }
+    
+    /**
+     * Deze methode zorgt ervoor dat het Frame wordt gemaakt
+     * inclusief MenuBar
+     */
+    private void makeFrame(){
+    	setTitle("Fox and Rabbit Simulation");
+    	stepLabel = new JLabel(STEP_PREFIX, JLabel.CENTER);
+    	population = new JLabel(POPULATION_PREFIX, JLabel.CENTER);
+        setLocation(100, 50);    	
+        
+    	makeMenuBar();
+    	makeSidepanel();
+    	
         Container contents = getContentPane();
         contents.add(stepLabel, BorderLayout.NORTH);
         contents.add(fieldView, BorderLayout.CENTER);
         contents.add(population, BorderLayout.SOUTH);
-        pack();
-        setVisible(true);
+        
+    	
+    	pack();
+    	setVisible(true);
     }
     
     /**
