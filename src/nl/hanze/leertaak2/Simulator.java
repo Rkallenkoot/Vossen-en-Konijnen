@@ -1,6 +1,6 @@
 package nl.hanze.leertaak2;
 
-import java.util.Random;
+import java.util.Map;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -20,15 +20,12 @@ public class Simulator
     private static final int DEFAULT_WIDTH = 120;
     // The default depth of the grid.
     private static final int DEFAULT_DEPTH = 80;
-    // The probability that a fox will be created in any given grid position.
-    private static final double FOX_CREATION_PROBABILITY = 0.02;
-    // The probability that a rabbit will be created in any given grid position.
-    private static final double RABBIT_CREATION_PROBABILITY = 0.08;    
 
     // List of animals in the field.
     private List<Animal> animals;
     // The current state of the field.
     private Field field;
+    private PopulationGenerator populationGenerator;
     // The current step of the simulation.
     private int step;
     // A graphical view of the simulation.
@@ -38,7 +35,6 @@ public class Simulator
     
     public static void main(String[] args){
     	sim = new Simulator();
-    	
     }
     
     /**
@@ -54,7 +50,8 @@ public class Simulator
      * @param depth Depth of the field. Must be greater than zero.
      * @param width Width of the field. Must be greater than zero.
      */
-    public Simulator(int depth, int width)
+    @SuppressWarnings("rawtypes")
+	public Simulator(int depth, int width)
     {
         if(width <= 0 || depth <= 0) {
             System.out.println("The dimensions must be greater than zero.");
@@ -65,11 +62,17 @@ public class Simulator
         
         animals = new ArrayList<Animal>();
         field = new Field(depth, width);
-
+        populationGenerator = new PopulationGenerator();
+        
         // Create a view of the state of each location in the field.
         view = new SimulatorView(depth, width);
-        view.setColor(Rabbit.class, Color.orange);
-        view.setColor(Fox.class, Color.blue);
+        
+        Map<Class, Color> colors = populationGenerator.getColors();
+        
+        for(Class key : colors.keySet()){
+        	Color color = colors.get(key);
+        	view.setColor(key, color);
+        }
         
         // Setup a valid starting point.
         reset();
@@ -128,34 +131,10 @@ public class Simulator
     public void reset()
     {
         step = 0;
-        animals.clear();
-        populate();
+        animals = populationGenerator.populate(field);
         
         // Show the starting state in the view.
         view.showStatus(step, field);
     }
     
-    /**
-     * Randomly populate the field with foxes and rabbits.
-     */
-    private void populate()
-    {
-        Random rand = Randomizer.getRandom();
-        field.clear();
-        for(int row = 0; row < field.getDepth(); row++) {
-            for(int col = 0; col < field.getWidth(); col++) {
-                if(rand.nextDouble() <= FOX_CREATION_PROBABILITY) {
-                    Location location = new Location(row, col);
-                    Fox fox = new Fox(true, field, location);
-                    animals.add(fox);
-                }
-                else if(rand.nextDouble() <= RABBIT_CREATION_PROBABILITY) {
-                    Location location = new Location(row, col);
-                    Rabbit rabbit = new Rabbit(true, field, location);
-                    animals.add(rabbit);
-                }
-                // else leave the location empty.
-            }
-        }
-    }
 }
