@@ -1,3 +1,5 @@
+package nl.hanze.leertaak2;
+
 /**
  * Represent a location in a rectangular grid.
  * 

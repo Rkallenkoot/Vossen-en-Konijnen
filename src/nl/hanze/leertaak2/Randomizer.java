@@ -1,3 +1,5 @@
+package nl.hanze.leertaak2;
+
 import java.util.Random;
 
 /**

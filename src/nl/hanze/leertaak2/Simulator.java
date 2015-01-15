@@ -1,4 +1,4 @@
-
+package nl.hanze.leertaak2;
 
 import java.util.Random;
 import java.util.List;
@@ -38,6 +38,7 @@ public class Simulator
     
     public static void main(String[] args){
     	sim = new Simulator();
+    	
     }
     
     /**
