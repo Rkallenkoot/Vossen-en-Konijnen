@@ -37,6 +37,8 @@ public class SimulatorView extends JFrame
     private Map<Class, Color> colors;
     // A statistics object computing and storing simulation information
     private FieldStats stats;
+    
+    private boolean isSimulating;
 
     /**
      * Create a view of the given width and height.
@@ -48,6 +50,7 @@ public class SimulatorView extends JFrame
         stats = new FieldStats();
         colors = new LinkedHashMap<Class, Color>();
         fieldView = new FieldView(height, width);
+        isSimulating = false;
         
         makeFrame();
     }
@@ -57,8 +60,7 @@ public class SimulatorView extends JFrame
     	// Make ff in GridLayout op BorderLayout.WEST
     	Container content = getContentPane();
     	JPanel sidepanel = new JPanel();
-    	sidepanel.setLayout(new GridLayout(4,1));
-    	
+    	sidepanel.setLayout(new GridLayout(10,1));
     	
     	btnSimulateOne = new JButton("Simulate 1 step");
     	btnSimulateOne.addActionListener(new ActionListener(){
@@ -79,8 +81,12 @@ public class SimulatorView extends JFrame
 						// TODO Auto-generated method stub
 						// disable the button so it cannot be pressed again.
 						btnSimulateMultiple.setEnabled(false);
+						btnSimulateOne.setEnabled(false);
+						isSimulating = true;
 						Simulator.sim.simulate(100);
 						btnSimulateMultiple.setEnabled(true);
+						btnSimulateOne.setEnabled(true);
+						isSimulating = false;
 					}
     			}).start();
     		}
@@ -90,6 +96,7 @@ public class SimulatorView extends JFrame
     	content.add(sidepanel, BorderLayout.WEST);
     	
     }
+
     
     /**
      * Deze methode maakt de MenuBar inclusief MenuItems
@@ -103,7 +110,6 @@ public class SimulatorView extends JFrame
     	
     	// File menu
     	JMenu fileMenu = new JMenu("File");
-    	fileMenu.setMnemonic('F');
     	menubar.add(fileMenu);
     	
     	JMenuItem quitItem = new JMenuItem("Quit");
@@ -115,6 +121,20 @@ public class SimulatorView extends JFrame
     	});
     	fileMenu.add(quitItem);
     	
+    	//Simulator menu
+    	JMenu simMenu = new JMenu("Simulator");
+    	menubar.add(simMenu);
+    	
+    	JMenuItem resetSim = new JMenuItem("Reset");
+    	resetSim.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_R, SHORTCUT_MASK));
+    	resetSim.addActionListener(new ActionListener(){
+    		public void actionPerformed(ActionEvent e){
+    			if (isSimulating == false) {
+    				Simulator.sim.reset();
+    			}
+    		}
+    	});
+    	simMenu.add(resetSim);
     }
     
     /**
