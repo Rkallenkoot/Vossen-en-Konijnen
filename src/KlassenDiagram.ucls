@@ -1,187 +1,205 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.1.8" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
   realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
-  <class id="1" language="java" name="Animal" project="Vossen-en-Konijnen" file="/Vossen-en-Konijnen/src/Animal.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="275" y="72"/>    
+  <class id="1" language="java" name="nl.hanze.leertaak2.Animal" project="Vossen-en-Konijnen" 
+    file="/Vossen-en-Konijnen/src/nl/hanze/leertaak2/Animal.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="628" y="135"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="Counter" project="Vossen-en-Konijnen" file="/Vossen-en-Konijnen/src/Counter.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="872" y="624"/>    
+  <class id="2" language="java" name="nl.hanze.leertaak2.tests.SimulatieTest" project="Vossen-en-Konijnen" 
+    file="/Vossen-en-Konijnen/src/nl/hanze/leertaak2/tests/SimulatieTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="96" y="478"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="Field" project="Vossen-en-Konijnen" file="/Vossen-en-Konijnen/src/Field.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="369" width="275" x="514" y="-60"/>    
+  <class id="3" language="java" name="nl.hanze.leertaak2.Counter" project="Vossen-en-Konijnen" 
+    file="/Vossen-en-Konijnen/src/nl/hanze/leertaak2/Counter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1037" y="704"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="FieldStats" project="Vossen-en-Konijnen" 
-    file="/Vossen-en-Konijnen/src/FieldStats.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1075" y="625"/>    
+  <class id="4" language="java" name="nl.hanze.leertaak2.Field" project="Vossen-en-Konijnen" 
+    file="/Vossen-en-Konijnen/src/nl/hanze/leertaak2/Field.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1245" y="194"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="Fox" project="Vossen-en-Konijnen" file="/Vossen-en-Konijnen/src/Fox.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="82" y="142"/>    
+  <class id="5" language="java" name="nl.hanze.leertaak2.FieldStats" project="Vossen-en-Konijnen" 
+    file="/Vossen-en-Konijnen/src/nl/hanze/leertaak2/FieldStats.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1247" y="704"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="Location" project="Vossen-en-Konijnen" 
-    file="/Vossen-en-Konijnen/src/Location.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="256" y="346"/>    
+  <class id="6" language="java" name="nl.hanze.leertaak2.Fox" project="Vossen-en-Konijnen" 
+    file="/Vossen-en-Konijnen/src/nl/hanze/leertaak2/Fox.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="785" y="468"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="Rabbit" project="Vossen-en-Konijnen" file="/Vossen-en-Konijnen/src/Rabbit.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="423" y="528"/>    
+  <class id="7" language="java" name="nl.hanze.leertaak2.Location" project="Vossen-en-Konijnen" 
+    file="/Vossen-en-Konijnen/src/nl/hanze/leertaak2/Location.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="79" y="136"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="Randomizer" project="Vossen-en-Konijnen" 
-    file="/Vossen-en-Konijnen/src/Randomizer.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="89" y="443"/>    
+  <class id="8" language="java" name="nl.hanze.leertaak2.Rabbit" project="Vossen-en-Konijnen" 
+    file="/Vossen-en-Konijnen/src/nl/hanze/leertaak2/Rabbit.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="451" y="430"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="Simulator" project="Vossen-en-Konijnen" 
-    file="/Vossen-en-Konijnen/src/Simulator.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="659" y="554"/>    
+  <class id="9" language="java" name="nl.hanze.leertaak2.Randomizer" project="Vossen-en-Konijnen" 
+    file="/Vossen-en-Konijnen/src/nl/hanze/leertaak2/Randomizer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="73" y="683"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="10" language="java" name="SimulatorView" project="Vossen-en-Konijnen" 
-    file="/Vossen-en-Konijnen/src/SimulatorView.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1337" y="147"/>    
+  <class id="10" language="java" name="nl.hanze.leertaak2.Simulator" project="Vossen-en-Konijnen" 
+    file="/Vossen-en-Konijnen/src/nl/hanze/leertaak2/Simulator.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="569" y="852"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="SimulatorView.FieldView" project="Vossen-en-Konijnen" 
-    file="/Vossen-en-Konijnen/src/SimulatorView.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1055" y="81"/>    
+  <class id="11" language="java" name="nl.hanze.leertaak2.SimulatorView" project="Vossen-en-Konijnen" 
+    file="/Vossen-en-Konijnen/src/nl/hanze/leertaak2/SimulatorView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1255" y="1061"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="12">    
+  <class id="12" language="java" name="nl.hanze.leertaak2.SimulatorView.FieldView" project="Vossen-en-Konijnen" 
+    file="/Vossen-en-Konijnen/src/nl/hanze/leertaak2/SimulatorView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1270" y="1461"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="13">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="13" name="field"/>      
-      <multiplicity id="14" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="15">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="16" name="field"/>      
-      <multiplicity id="17" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="18">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="19" name="counters"/>      
-      <multiplicity id="20" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <nesting id="21">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="11"/>  
-  </nesting>  
-  <association id="22">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="23" name="fieldView"/>      
-      <multiplicity id="24" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="25">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="26" name="sim"/>      
-      <multiplicity id="27" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="28">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="29" name="stats"/>      
-      <multiplicity id="30" minimum="0" maximum="1"/>    
+      <attribute id="14" name="field"/>      
+      <multiplicity id="15" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="31">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="32" name="location"/>      
-      <multiplicity id="33" minimum="0" maximum="1"/>    
+  <generalization id="16">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <association id="17">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="18" name="view"/>      
+      <multiplicity id="19" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
+    <end type="TARGET" refId="11" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="34">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="35">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <association id="36">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="37" name="view"/>      
-      <multiplicity id="38" minimum="0" maximum="1"/>    
+  <association id="20">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="21" name="location"/>      
+      <multiplicity id="22" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="23">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="24" name="sim"/>      
+      <multiplicity id="25" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="10" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="39">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="40" name="animals"/>      
-      <multiplicity id="41" minimum="0" maximum="2147483647"/>    
+  <association id="26">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="27" name="animals"/>      
+      <multiplicity id="28" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="29">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="30" name="counters"/>      
+      <multiplicity id="31" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="32">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="12"/>  
+  </nesting>  
+  <association id="33">    
+    <bendpoint x="996" y="581"/>    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="34" name="field"/>      
+      <multiplicity id="35" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="36">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="37" name="stats"/>      
+      <multiplicity id="38" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="39">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <association id="40">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="41" name="sim"/>      
+      <multiplicity id="42" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="43">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="44" name="fieldView"/>      
+      <multiplicity id="45" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

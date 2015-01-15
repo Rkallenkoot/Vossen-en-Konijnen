@@ -28,6 +28,9 @@ public class SimulatorView extends JFrame
     private final String POPULATION_PREFIX = "Population: ";
     private JLabel stepLabel, population;
     
+    private static final int MINIMUM_FRAME_WIDTH = 880;
+    private static final int MINIMUM_FRAME_HEIGHT = 575;
+    
     // Buttons die worden gebruikt in de sidepanel
     private JButton btnSimulateOne, btnSimulateMultiple;
     
@@ -160,8 +163,9 @@ public class SimulatorView extends JFrame
         
     	
     	pack();
+    	setMinimumSize(new Dimension(MINIMUM_FRAME_WIDTH, MINIMUM_FRAME_HEIGHT));
     	setVisible(true);
-    }
+    } 
     
     /**
      * Define a color to be used for a given class of animal.
