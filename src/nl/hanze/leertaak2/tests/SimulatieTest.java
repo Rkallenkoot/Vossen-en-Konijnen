@@ -12,10 +12,6 @@ import java.util.Random;
 
 public class SimulatieTest {
 	
-	// we hebben animals nodig
-	// een field waar de animals in kunnen
-	// een simulator view waar we het in laten zien???
-	
 	private Simulator sim;
 	private static final int SIZE = 30;
 	private static final int STEPS = 37;
