@@ -38,6 +38,7 @@ public class SimulatorView extends JFrame
     // A statistics object computing and storing simulation information
     private FieldStats stats;
     
+    // A boolean that turns true when the button Simulate 100 steps has been pressed
     private boolean isSimulating;
 
     /**
