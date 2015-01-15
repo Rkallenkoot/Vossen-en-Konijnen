@@ -67,7 +67,7 @@ public class SimulatorView extends JFrame
     	btnSimulateOne.addActionListener(new ActionListener(){
     		public void actionPerformed(ActionEvent e){
     			// Simulate 1 step
-    			Simulator.sim.simulate(1);
+    			Simulator.sim.simulateOneStep();
     		}
     	});
     	sidepanel.add(btnSimulateOne);
