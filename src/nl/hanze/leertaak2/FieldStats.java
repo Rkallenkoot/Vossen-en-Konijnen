@@ -1,6 +1,5 @@
 package nl.hanze.leertaak2;
 
-import java.awt.Color;
 import java.util.HashMap;
 
 /**

@@ -1,10 +1,10 @@
 package nl.hanze.leertaak2;
 
-import java.util.Map;
-import java.util.List;
+import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.awt.Color;
+import java.util.List;
+import java.util.Map;
 
 /**
  * A simple predator-prey simulator, based on a rectangular field

@@ -1,13 +1,13 @@
 package nl.hanze.leertaak2;
 
 import java.awt.Color;
-import java.util.Map;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.ArrayList;
+import java.util.Map;
 import java.util.Random;
 
-
+@SuppressWarnings("rawtypes")
 public class PopulationGenerator {
 	
 	private static final double FOX_CREATION_PROBABILITY = 0.02;
@@ -15,7 +15,6 @@ public class PopulationGenerator {
 	
 	private List<Animal> animals;
 	
-	@SuppressWarnings("rawtypes")
 	private Map<Class, Color> colors;
 	
 	public PopulationGenerator(){
@@ -34,7 +33,6 @@ public class PopulationGenerator {
 	 * Their value is a color that will be used in a Field
 	 * @return a Map with Class as key and Color as value
 	 */
-	@SuppressWarnings("rawtypes")
 	public Map<Class, Color> getColors(){
 		return colors;
 	}
@@ -61,6 +59,7 @@ public class PopulationGenerator {
 					Rabbit rabbit = new Rabbit(true, field, location);
 					animals.add(rabbit);
 				}
+				
 			}
 		}
 		return animals;
