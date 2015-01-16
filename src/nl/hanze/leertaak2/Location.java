@@ -3,7 +3,7 @@ package nl.hanze.leertaak2;
 /**
  * Represent a location in a rectangular grid.
  * 
- * @author David J. Barnes and Michael KÃ¶lling
+ * @author David J. Barnes and Michael Kšlling
  * @version 2011.07.31
  */
 public class Location

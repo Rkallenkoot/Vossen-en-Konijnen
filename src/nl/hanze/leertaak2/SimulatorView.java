@@ -144,7 +144,7 @@ public class SimulatorView extends JFrame
      */
     private void makeFrame(){
     	setTitle("Fox and Rabbit Simulation");
-    	// Het programma laten afsluiten bij het klikken op het kruisje
+    	// Het programma laten afsluiten als er op het rode kruisje wordt geklikt
     	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     	stepLabel = new JLabel(STEP_PREFIX, JLabel.CENTER);
     	population = new JLabel(POPULATION_PREFIX, JLabel.CENTER);
