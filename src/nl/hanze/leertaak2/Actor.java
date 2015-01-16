@@ -8,17 +8,17 @@ import java.util.List;
 
 public interface Actor {
 	
-/**
- * This is what the actor does most of the time 
- * @param newActors A list of newly spawned Actors
- */
+	/**
+	 * This is what the actor does most of the time 
+	 * @param newActors A list of newly spawned Actors
+	 */
 	void act(List<Actor> newActors);
-/**
- * Returns if the Actor is active or not
- * @return true or false
- */
+	
+	/**
+	 * Returns if the Actor is active or not
+	 * @return true or false
+	 */
 	boolean isActive();
 	
 	
 }
->>>>>>> branch 'master' of https://github.com/Rkallenkoot/Vossen-en-Konijnen.git
