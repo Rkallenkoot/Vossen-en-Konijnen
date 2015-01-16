@@ -22,7 +22,7 @@ public class Simulator
     private static final int DEFAULT_DEPTH = 80;
 
     // List of animals in the field.
-    private List<Animal> animals;
+    private List<Actor> animals;
     // The current state of the field.
     private Field field;
     private PopulationGenerator populationGenerator;
@@ -35,6 +35,7 @@ public class Simulator
     
     public static void main(String[] args){
     	sim = new Simulator();
+    	sim.runLongSimulation();
     }
     
     /**
@@ -60,7 +61,7 @@ public class Simulator
             width = DEFAULT_WIDTH;
         }
         
-        animals = new ArrayList<Animal>();
+        animals = new ArrayList<Actor>();
         field = new Field(depth, width);
         populationGenerator = new PopulationGenerator();
         
@@ -109,12 +110,12 @@ public class Simulator
         step++;
 
         // Provide space for newborn animals.
-        List<Animal> newAnimals = new ArrayList<Animal>();        
+        List<Actor> newAnimals = new ArrayList<Actor>();        
         // Let all rabbits act.
-        for(Iterator<Animal> it = animals.iterator(); it.hasNext(); ) {
-            Animal animal = it.next();
+        for(Iterator<Actor> it = animals.iterator(); it.hasNext(); ) {
+            Actor animal = it.next();
             animal.act(newAnimals);
-            if(! animal.isAlive()) {
+            if(! animal.isActive()) {
                 it.remove();
             }
         }

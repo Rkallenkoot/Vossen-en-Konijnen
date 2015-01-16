@@ -13,7 +13,7 @@ public class PopulationGenerator {
 	private static final double FOX_CREATION_PROBABILITY = 0.02;
 	private static final double RABBIT_CREATION_PROBABILITY = 0.08;
 	
-	private List<Animal> animals;
+	private List<Actor> animals;
 	
 	private Map<Class, Color> colors;
 	
@@ -42,7 +42,7 @@ public class PopulationGenerator {
 	 * @param field 
 	 * @return List of animals that can be used 
 	 */
-	public List<Animal> populate(Field field){
+	public List<Actor> populate(Field field){
 		// clear the field
 		field.clear();
 		
