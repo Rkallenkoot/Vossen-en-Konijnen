@@ -38,6 +38,14 @@ public abstract class Animal implements Actor
     {
         return alive;
     }
+    /**
+     * Implements the isActive method from interface Actor
+     */
+    @Override
+    public boolean isActive()
+    {
+    	return isAlive();
+    }
 
     /**
      * Indicate that the animal is no longer alive.
