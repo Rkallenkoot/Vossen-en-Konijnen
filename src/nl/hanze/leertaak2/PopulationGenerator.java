@@ -12,6 +12,7 @@ public class PopulationGenerator {
 	
 	private static final double FOX_CREATION_PROBABILITY = 0.02;
 	private static final double RABBIT_CREATION_PROBABILITY = 0.08;
+	private static final double HUNTER_CREATION_PROBABILITY = 0.0005;
 	
 	private List<Actor> animals;
 	
@@ -26,6 +27,7 @@ public class PopulationGenerator {
 	private void setColors(){
 		colors.put(Rabbit.class, Color.ORANGE);
 		colors.put(Fox.class, Color.BLUE);
+		colors.put(Hunter.class, Color.RED);
 	}
 	
 	/**
@@ -58,6 +60,11 @@ public class PopulationGenerator {
 					Location location = new Location(row, col);
 					Rabbit rabbit = new Rabbit(true, field, location);
 					animals.add(rabbit);
+				}
+				else if(random.nextDouble() <= HUNTER_CREATION_PROBABILITY){
+					Location location = new Location(row, col);
+					Hunter hunter = new Hunter(field, location);
+					animals.add(hunter);
 				}
 				
 			}
