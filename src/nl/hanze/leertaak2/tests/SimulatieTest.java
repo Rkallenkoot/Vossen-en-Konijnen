@@ -1,14 +1,9 @@
 package nl.hanze.leertaak2.tests;
 
-import nl.hanze.leertaak2.*;
-import static org.junit.Assert.*;
+import nl.hanze.leertaak2.Simulator;
 
 import org.junit.Before;
 import org.junit.Test;
-
-import java.awt.Color;
-import java.util.ArrayList;
-import java.util.Random;
 
 public class SimulatieTest {
 	

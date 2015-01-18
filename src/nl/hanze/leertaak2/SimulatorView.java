@@ -79,7 +79,6 @@ public class SimulatorView extends JFrame
     			new Thread(new Runnable(){
 					@Override
 					public void run() {
-						// TODO Auto-generated method stub
 						// disable the button so it cannot be pressed again.
 						btnSimulateMultiple.setEnabled(false);
 						btnSimulateOne.setEnabled(false);
